@@ -20,10 +20,20 @@
 </div>
 
 <div class="sudden2">
-  <p>Does it have a dressing?</p>
+  <p>Does it go in a bowl?</p>
 </div>
 
 <div class="sudden2">
+  <button type="button" onclick="question2()">Yes</button>
+
+  <button type="button" class="no" onclick="notSalad()">No</button>
+</div>
+
+<div id="q2" class="hide">
+  <p>Does it have a dressing?</p>
+</div>
+
+<div  id="a2" class="hide">
   <button type="button" onclick="isSalad()">Yes</button>
 
   <button type="button" class="no" onclick="notSalad()">No</button>
@@ -45,6 +55,13 @@
 
 <script>
 var checked = false;
+
+function question2() {
+  var x = document.getElementById("q2");
+  var y = document.getElementById("a2");
+    x.style.display = "block";
+    y.style.display = "block";
+} 
 
 function isSalad() {
   var x = document.getElementById("yesSalad");
@@ -72,6 +89,10 @@ function restart() {
   x.style.display = "none";
   checked = false;
   var y = document.getElementById("restart");
+  y.style.display = "none";
+  var x = document.getElementById("q2");
+  var y = document.getElementById("a2");
+  x.style.display = "none";
   y.style.display = "none";
 
 } 
