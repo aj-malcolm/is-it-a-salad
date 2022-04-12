@@ -11,43 +11,43 @@ body {
 body {
   background: #333;
   font-family: monospace;
-  padding-top: 5em;
-  font-size: 2em;
+  padding-top: 5rem;
+  font-size: 2rem;
   color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-itrems: center;
   justify-content: center;
 }
 
-/* DEMO-SPECIFIC STYLES */
+/* DremO-SPECIFIC STYLES */
 .typewriter h1 {
-  font-size: 4em;
+  font-size: 4rem;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: .15rem solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .15rem; /* Adjust as needed */
   animation: 
     typing 1.5s steps(14, end),
     blink-caret 1s step-end infinite;
 }
 .sudden {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  /*border-right: .15em solid orange; /* The typwriter cursor */*/
+  /*border-right: .15rem solid orange; /* The typwriter cursor */*/
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 1cm auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .1em; /* Adjust as needed */
+  letter-spacing: .1rem; /* Adjust as needed */
   animation: 
     typing 2.5s steps(1, end),
     blink-caret 1s step-end infinite;
 }
 .sudden2 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  /*border-right: .15em solid orange; /* The typwriter cursor */*/
+  /*border-right: .15rem solid orange; /* The typwriter cursor */*/
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .1em; /* Adjust as needed */
+  letter-spacing: .1rem; /* Adjust as needed */
   animation: 
     typing 3.5s steps(1, end),
     blink-caret 1s step-end infinite;
@@ -74,7 +74,7 @@ button {
   text-decoration: none;
   display: inline-block;
   border-radius: 12px;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 button.no {
@@ -83,9 +83,9 @@ button.no {
 
 .alert {
   display: none;
-  margin-top: 2em;
+  margin-top: 2rem;
   padding: 20px;
-  font-size: 1em;
+  font-size: 1rem;
   /*background-color: #f44336;*/
   color: white;
 }
