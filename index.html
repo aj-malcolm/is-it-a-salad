@@ -7,16 +7,78 @@
     <title>Is it a salad?</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+<body>
 
-	<div class="typewriter">
-	  <h1>Is it a salad?</h1>
-	</div>
+<p>Your guide to the age old question</p>
 
-	<input id="toggle-on" name="toggle" type="radio">
-	<label for="toggle-on">On</label>
-	<input id="toggle-off" name="toggle" type="radio">
-	<label for="toggle-off">Off</label>
-    <script src="index.js"></script>
-  </body>
+<div class="typewriter">
+  <h1>Is it a salad?</h1>
+</div>
+
+<div class="sudden para">
+  <p>Please answer the following to the best of your ability.</p>
+</div>
+
+<div class="sudden2">
+  <p>Does it have a dressing?</p>
+</div>
+
+<div class="sudden2">
+  <button type="button" onclick="isSalad()">Yes</button>
+
+  <button type="button" class="no" onclick="notSalad()">No</button>
+</div>
+
+ <div class="alert" id="yesSalad">
+  <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> -->
+  <h1>It is a salad.</h1>
+</div> 
+
+ <div class="alert" id="noSalad">
+  <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> -->
+  <h1>It is not a salad.<h1>
+</div> 
+
+<div class="btm">
+  <button type="button" class="no hide" id="restart" onclick="restart()">Start again.</button>
+</div> 
+
+<script>
+var checked = false;
+
+function isSalad() {
+  var x = document.getElementById("yesSalad");
+  var y = document.getElementById("restart");
+  if(!checked) {
+    x.style.display = "block";
+    checked = true;
+    y.style.display = "block";
+  }
+} 
+function notSalad() {
+  var x = document.getElementById("noSalad");
+  var y = document.getElementById("restart");
+  if(!checked) {
+    x.style.display = "block";
+    checked = true;
+    y.style.display = "block";
+  }
+} 
+
+function restart() {
+  var x = document.getElementById("noSalad");
+  x.style.display = "none";
+  var x = document.getElementById("yesSalad");
+  x.style.display = "none";
+  checked = false;
+  var y = document.getElementById("restart");
+  y.style.display = "none";
+
+} 
+
+</script>
+
+
+</body>
 </html>
+
